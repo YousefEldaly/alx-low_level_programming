@@ -13,7 +13,7 @@ void swab_int(int *a, int *b)
 {
 	int tmp;
 
-	n = *a;
+	tmp = *a;
 	*a = *b;
-	*b = n;
+	*b = tmp;
 }
