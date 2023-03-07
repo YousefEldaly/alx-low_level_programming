@@ -1,20 +1,22 @@
 #include "main.h"
 /**
  * reverse_array - prints reverse array.
- * @a: array to reverse.
- * @n: size of the array.
+ * @a: array to be compared.
+ * @n: size of array.
  * Return: reversed array.
  */
 void reverse_array(int *a, int n)
 {
-	int tmp;
-	int i;
+	int swap, begin, end;
 
-	for (i = 0; i < n; ++i)
+	begin = 0;
+	end = n - 1;
+	while (begin < end)
 	{
-		tmp = a[i];
-		a[i] = a[n];
-		a[n] = tmp;
-		--n;
+		swap = *(a + begin);
+		*(a + begin) = *(a + end);
+		*(a + end) = swap;
+		begin++;
+		end--;
 	}
 }
