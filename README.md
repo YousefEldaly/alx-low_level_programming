@@ -1,1 +1,2 @@
-This repo contains the solutions of "0x00. C - Hello, World" project in the alx SE program
+#alx-low_levelprogramming
+A repo for all accrepted Solutions for low-level programming tasks
