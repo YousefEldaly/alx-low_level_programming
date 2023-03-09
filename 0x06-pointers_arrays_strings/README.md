@@ -19,5 +19,3 @@ Practicing more pointers and arrays, this folder contains:
 To compile the file remember to use gcc 4.8or above by typing:
 
 `gcc -Wall -pedantic -Werror -Wextra <mainfile.c> <function.c> -o <executable file>`
-
-Readme credits to: [cmmolanos](https://github.com/cmmolanos1/holbertonschool-low_level_programming/blob/master/0x06-pointers_arrays_strings/README.md "cmmolanos")
