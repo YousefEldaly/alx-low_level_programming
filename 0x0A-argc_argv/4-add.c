@@ -19,6 +19,11 @@ if (argc > 1)
 {
 	for (i = 1; i <= (argc - 1); i++)
 	{
+		if (!isdigit(atoi(argv[i])))
+		{
+			printf("Error\n");
+			return (1);
+		}
 		sum = sum + atoi(argv[i]);
 
 	}
@@ -26,10 +31,7 @@ if (argc > 1)
 }
 
 if (argc == 1)
-{
 	printf("0\n");
-	return (1);
-}
 
 return (0);
 
