@@ -27,7 +27,7 @@ if (argc > 1)
 
 if (argc == 1)
 	printf("0\n");
-	return 1;
+	return (1);
 
 return (0);
 
