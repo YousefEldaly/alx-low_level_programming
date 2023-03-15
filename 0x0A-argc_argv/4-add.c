@@ -12,23 +12,28 @@
  */
 int main(int argc, char *argv[])
 {
-int i;
-int sum = 0;
+int i, j, len, sum = 0;
+char *pChar;
 
 if (argc <= 1)
-        printf("0\n");
+	printf("0\n");
 
-if (argc > 1)
+else
 {
-	for (i = 1; i <= (argc - 1); i++)
+	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(atoi(argv[i])))
+		pChar = argv[i];
+		len = strlen(pChar);
+		for (j = 0; j < len; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(*(pChar + j)))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		sum = sum + atoi(argv[i]);
 
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 }
