@@ -14,7 +14,7 @@ int strlength(char *s)
  * pali - compares a string and its reverse
  * @s: string
  * @strlen: string length
- * return: 1 (Succes).
+ * Return: 1 (Succes).
  */
 int pali(char *s, int strlen)
 {
@@ -23,7 +23,7 @@ int pali(char *s, int strlen)
 
 	else if (*s == '\0')
 		return (1);
-	
+
 	return (pali(s + 1, strlen - 2));
 }
 
@@ -35,7 +35,7 @@ int pali(char *s, int strlen)
 int is_palindrome(char *s)
 {
 	int length;
-	
+
 	length = strlength(s) - 1;
 	return (pali(s, length));
 }
