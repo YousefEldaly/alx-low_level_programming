@@ -20,11 +20,10 @@ char *str_concat(char *s1, char *s2)
 
 	if (!catptr)
 		return (catptr);
-	while (*s1 != '\0')
+	while (s1[i] != '\0')
 	{
-		catptr[i] = *s1;
+		catptr[i] = s1[i];
 		i++;
-		s1++;
 	}
 	while (*s2 != '\0')
 	{
