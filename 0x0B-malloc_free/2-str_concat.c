@@ -11,9 +11,9 @@ char *str_concat(char *s1, char *s2)
 	char *catptr;
 
 	if (s1 == NULL)
-		s1 = '\0';
+		s1 = "";
 	if (s2 == NULL)
-		s2 = '\0';
+		s2 = "";
 	str1len = strlen(s1);
 	str2len = strlen(s2);
 	catptr = (char *)malloc(sizeof(char) * (str1len + str2len + 1));
