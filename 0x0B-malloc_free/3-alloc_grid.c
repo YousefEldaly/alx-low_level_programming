@@ -1,6 +1,4 @@
-#include "notrebloh.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * alloc_grid - allocate memory to grid
