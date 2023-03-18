@@ -16,7 +16,6 @@ char *str_concat(char *s1, char *s2)
 		s2 = '\0';
 	str1len = strlen(s1);
 	str2len = strlen(s2);
-
 	catptr = (char *)malloc(sizeof(char) * (str1len + str2len + 1));
 
 	if (!catptr)
@@ -25,6 +24,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		catptr[i] = s1[i];
 		i++;
+		s1++;
 	}
 	while (*s2 != '\0')
 	{
