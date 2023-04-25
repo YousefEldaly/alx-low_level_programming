@@ -9,12 +9,12 @@
  * on failer, 1 or 2
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i, bytes;
 	int (*address)(int, char **) = main;
 	unsigned char opcode;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
