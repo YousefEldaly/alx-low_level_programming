@@ -6,7 +6,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	int i;
+	size_t i;
 	const list_t *current;
 
 	current = h;
