@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int file_from, file_to;
-	int num1 = 1024, num2 = 0;
+	int num1, num2 = 0;
 	char buf[1024];
 
 	if (argc != 3)
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	}
 
 
-	for (num1; num1 == 1024)
+	for (num1 = 1024; num1 == 1024; )
 	{
 		num1 = read(file_from, buf, 1024);
 		if (num1 == -1)
